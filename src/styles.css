@@ -104,7 +104,7 @@ body {
 .nav__input:focus {
 	width: 150px;
 }
-.main__banner {
+.banner {
 	position: relative;
 	width: 100%;
 	height: 300px;
@@ -115,6 +115,8 @@ body {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+
+	margin-bottom: 60px;
 }
 .banner__image {
 	width: 100%;
@@ -177,6 +179,86 @@ body {
 }
 .banner__content-link:hover {
 	background-color: #fe36358c;
+}
+.episodes {
+	margin-bottom: 20px;
+}
+.episodes-text {
+	color: var(--white);
+	font-size: 18px;
+	font-weight: 600;
+
+	margin-bottom: 2px;
+}
+.episodes-text::after {
+	content: '»';
+	display: inline-block;
+
+	margin-left: 5px;
+}
+.episodes-text:hover::after {
+	content: '»';
+	display: inline-block;
+
+	margin-left: 10px;
+}
+.episodes-paragraph {
+	color: var(--grey);
+
+	font-size: 14px;
+	font-weight: 500;
+}
+.card__wrapper {
+	display: flex;
+	gap: 15px;
+}
+.card {
+	position: relative;
+
+	width: 16%;
+
+	border-radius: 6px;
+	overflow: hidden;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.card__image {
+	border-radius: 8px;
+}
+.card__content {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 0 10px 0 10px;
+
+	word-break: break-all;
+
+	background-color: #000000d1;
+	opacity: 0;
+}
+.card__content:hover {
+	opacity: 1;
+}
+.card__content:active {
+	background-color: #3a3a3ad1;
+	transition: background-color 200ms ease-in-out;
+}
+.card__content-text {
+	font-size: 18px;
+	font-weight: 500;
 }
 @media (max-width: 820px) {
 	.header__logo {
